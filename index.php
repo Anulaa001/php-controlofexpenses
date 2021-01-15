@@ -18,7 +18,7 @@
     <div class="container main">
         <div class="row">
             <div class="col">
-                <h2 class="main-color-text">Dziennik wydatków</h2>
+                <h2 class="main-color-text">Dziennik Wydatków</h2>
                 <h4>Twój budżet pod kontrolą</h4>
             </div>
         </div>
