@@ -3,6 +3,7 @@
     // wyciągam wszystkie wpisy, a wyzej lącznie z bazą danych ten plik
     $query = "SELECT * FROM list";
     $wpisy = mysqli_query($con, $query);
+    $sum = "SELECT SUM(amount) AS suma FROM list";
 ?> -->
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +34,7 @@
                             <h5 class="mb-1"><span class="font-weight-bold">#<?php echo $index ?></span> <?php echo $wiersz["title"] ?></h5>
                             <small class="text-muted"><?php echo $wiersz["data"] ?></small>
                         </div>
-                        <div class="mb-1"><em><?php echo $wiersz["amount"] ?></em></div>
+                        <div class="mb-1"><em><?php echo $wiersz["amount"] ?> ZŁ</em></div>
                         <p class="mb-1"><?php echo $wiersz["description"] ?></p>
                         <small class="text-dark"><?php echo $wiersz["category"] ?></small>
 
@@ -41,6 +42,12 @@
                     </div>
                 <?php endwhile; ?>
             </div>
+        </div>
+        <div class ="total sum">
+                    <h4 class="main-color-text">Do tej pory wydane:</h4><h4>
+                    <?php $sum = mysqli_fetch_assoc(mysqli_query($con, $sum));
+                    $suma = $sum['suma'];
+                    echo $suma;?> ZŁ</h4>
         </div>
         <div class="row form">
             <div class="col-4">
