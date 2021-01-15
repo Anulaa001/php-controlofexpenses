@@ -23,3 +23,13 @@ body {
     border-top: 2px solid #fff;
 }
 
+.img-del {
+    height: 32px;
+    width: auto;
+    transition: .6s;
+}
+
+.img-del :hover {
+    transform: rotate(30deg);
+}
+

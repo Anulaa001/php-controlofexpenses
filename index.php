@@ -38,7 +38,10 @@
                         <p class="mb-1"><?php echo $wiersz["description"] ?></p>
                         <small class="text-dark"><?php echo $wiersz["category"] ?></small>
 
-                        <a href="delete.php?a=del&index=<?php echo $wiersz["id"] ?>">Usuń</a> 
+                        <a href="delete.php?a=del&index=<?php echo $wiersz["id"] ?>">
+                            <img style="float: right; height:  32px;" src="delete.png" />
+                        </a> 
+                    
                     </div>
                 <?php endwhile; ?>
             </div>
