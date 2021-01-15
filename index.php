@@ -17,8 +17,8 @@
     <div class="container main">
         <div class="row">
             <div class="col">
-                <h2 class="main-color-text">Control of expenses</h2>
-                <h4>Your recent expenses</h4>
+                <h2 class="main-color-text">Dziennik wydatków</h2>
+                <h4>Twój budżet pod kontrolą</h4>
             </div>
         </div>
         <div class="row list">
@@ -36,13 +36,15 @@
                         <div class="mb-1"><em><?php echo $wiersz["amount"] ?></em></div>
                         <p class="mb-1"><?php echo $wiersz["description"] ?></p>
                         <small class="text-dark"><?php echo $wiersz["category"] ?></small>
+
+                        <a href="delete.php?a=del&index=<?php echo $wiersz["id"] ?>">Usuń</a> 
                     </div>
                 <?php endwhile; ?>
             </div>
         </div>
         <div class="row form">
             <div class="col-4">
-                <h4>Your recent expenses</h4>
+                <h4>Ostatni wydatek</h4>
                 <p>Dodaj nowy wydatek do listy wydatków</p>
             </div>
             <div class="col-8">
