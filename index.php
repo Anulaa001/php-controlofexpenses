@@ -49,6 +49,7 @@
                     $suma = $sum['suma'];
                     echo $suma;?> ZŁ</h4>
         </div>
+        <hr style="border: 0px; height: 5px; background: #0098d8;">
         <div class="row form">
             <div class="col-4">
                 <h4>Ostatni wydatek</h4>
@@ -72,7 +73,7 @@
                         <label for="category">Kategoria</label>
                         <input type="text" class="form-control" name="category" id="category" placeholder="Podaj kategorie">
                     </div>
-                    <button type="submit" name="submitBtn" class="btn btn-primary w-100 mb-2">Dodaj do listy</button>
+                    <button type="submit" name="submitBtn" class="btn btn-primary w-100 mb-2" style="background: #0098d8;">Dodaj do listy</button>
                 </form>
             </div>
         </div>
